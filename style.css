@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-padding-top: 2rem;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+}
+
+
+:root {
+    /* Primary Color */
+    --primary-color: #31fe9f;
+    
+    /* Secondary Colors */
+    --dark-gray: #191919;
+    --medium-gray: #242424;
+    --light-green: #23d497;
+    
+    /* Text Colors */
+    --text-color: #ffffff; /* White */
+    --text-color-dark: #000000; /* Black */
+    
+    /* Background Colors */
+    --background-color: var(--dark-gray);
+    --gradient-color: linear-gradient(135deg, var(--primary-color), var(--light-green));
+    
+    /* Icon Colors */
+    --icon-color: var(--medium-gray);
+    
+    /* Border Colors */
+    --border-color: var(--light-green);
+}
+  
+  html ::-webkit-scrollbar{
+    width: 0.5rem;
+}
+  html ::-webkit-scrollbar-track{
+    background: transparent;
+}
+  html ::-webkit-scrollbar-thumb{
+    background: var(--primary-color);
+    border-radius: 6rem;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+    justify-content: space-between;
+    background: #eeeff1;
+    padding: 15px 80px;
+}
+
+.navbar{
+    display: flex;
+}
+
+.navbar li{
+    position: relative;
+}
+
+.navbar a{
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    color: var(--text-color-dark);
+    font-weight: 500;
+}
+.navbar a::after{
+    content: "";
+    width: 0%;
+    height: 3px;
+    background: var(--gradient-color);
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    transition: 0.5s;
+}
+
+.navbar a:hover::after{
+    width: 100%;
+}
+
+#menu-icon{
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 10001;
+    display: none;
+}
+.header-btn a{
+    padding: 10px 20px;
+    color: var(--text-color-dark);
+    font-weight: 500;
+}
+.header-btn .log-in{
+    background: var(--medium-gray);
+    color: white;
+    border-radius: 0.5rem;
+}
+.header-btn .log-in:hover{
+    background: var(--primary-color);
+    color: var(--medium-gray);
+    transition: 0.5s;
+}
+
+
