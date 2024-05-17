@@ -110,4 +110,94 @@ header{
     transition: 0.5s;
 }
 
+.home{
+    width: 100%;
+    min-height: 100vh;
+    margin-top: 8rem;
+    position: relative;
+    background: url(img/design4.png);
+    background-position: center right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+}
 
+.text{
+    padding: 15px 80px;
+    /* given extra margin to center */
+    margin-bottom: 5rem;
+}
+
+.text h1{
+    font-size: 5.5rem; 
+    letter-spacing: 2px;
+}
+
+.text span{
+    color: var(--primary-color);
+}
+
+.text p{
+    margin: 00.5rem 0 1rem;
+}
+
+.app-stores{
+    display: flex;
+}
+
+.app-stores img{
+    width: 100px;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+.form-container form{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+    position: absolute;
+    bottom: 5rem;
+    left: 100px;
+    background: white;
+    padding: 20px;
+    border-radius: 0.5rem;
+}
+
+.input-box{
+    flex: 1 1 7rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-box span{
+    font-weight: 500;
+}
+
+.input-box input{
+    padding: 7px;
+    outline: none;
+    border: none;
+    background: #eeeff1;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+}
+
+.form-container form .btn{
+    flex: 1 1 7rem;
+    border: none;
+    padding: 10px 34px;
+    border-radius: 0.5rem;
+    background: var(--medium-gray);
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.form-container form .btn:hover{
+    background: var(--primary-color);
+    color: var(--medium-gray);
+    transition: 0.5s;
+}
