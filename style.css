@@ -140,7 +140,7 @@ header{
 }
 
 .text p{
-    margin: 00.5rem 0 1rem;
+    margin: 0.5rem 0 1rem;
 }
 
 .app-stores{
@@ -148,7 +148,7 @@ header{
 }
 
 .app-stores img{
-    width: 100px;
+    width: 140px;
     margin-right: 1rem;
     cursor: pointer;
 }
@@ -157,12 +157,12 @@ header{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    gap: 2rem;
+    gap: 4rem;
     position: absolute;
-    bottom: 5rem;
-    left: 100px;
+    bottom: 4rem;
+    left: 210px;
     background: white;
-    padding: 20px;
+    padding: 25px;
     border-radius: 0.5rem;
 }
 
@@ -173,6 +173,7 @@ header{
 }
 
 .input-box span{
+    font-size: 1.2rem;
     font-weight: 500;
 }
 
@@ -192,7 +193,7 @@ header{
     border-radius: 0.5rem;
     background: var(--medium-gray);
     color: white;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 500;
 }
 
