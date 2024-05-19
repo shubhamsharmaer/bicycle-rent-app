@@ -334,16 +334,6 @@ h4{
     padding: 8px;
 }
 
-.tags{
-    /* border: 1px solid rgb(27, 24, 24); */
-    /* border-radius: 12px; */
-    /* padding: 4px 8px; */
-    /* font-size: 1rem; */
-    /* background: #eeeff1;  */
-    /* font-weight: 600; */
-}
-
-
 .action-btn{
     display: flex;
     align-items: center;
