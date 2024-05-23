@@ -132,7 +132,7 @@ header{
 }
 
 .text h1{
-    font-size: 5.5rem; 
+    font-size: 4.5rem; 
     letter-spacing: 2px;
 }
 
@@ -380,4 +380,46 @@ h4{
 
 .btn-2:hover{
     transform: translateY(-5px);
+}
+
+.about-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 2rem;
+    min-height: 100vh;
+    align-items: center;
+    gap: 1rem;
+    /* margin-left: 4rem; */
+    background: url(https://images.unsplash.com/photo-1496147539180-13929f8aa03a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    /* object-fit: cover; */
+    background-position: center right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* margin-right: 4rem; */
+}
+
+.about-container span{
+    color: var(--primary-color);
+}
+
+.about-container h1{
+    color: white;
+    font-size: 3.4rem;
+}
+
+
+/* .about-img img{
+    width: 100%;
+} */
+
+
+.about-text p{
+    margin: 0.7rem 0 1.2rem;
+}
+
+
+
+.about-text .about-btn{
+    width: 130px;
+    margin: 0.7rem 0 1.2rem;
 }
