@@ -471,6 +471,27 @@ h4{
     color: #31fe9f;
 }
 
+/* Reviews Animation */
+.reviews-container .box:hover{
+    animation: shake 0.8s;
+}
+
+@keyframes shake{ 
+    0%{ 
+      transform: translateY(0) 
+    } 
+    25%{ 
+      transform: translateY(25px); 
+    } 
+      
+    50%{ 
+      transform: translateY(-25px); 
+    } 
+    100%{ 
+      transform: translateY(0px); 
+    } 
+  } 
+
 .newsletter{
     background: var(--gradient-color);
     display: flex;
@@ -496,10 +517,13 @@ h4{
     padding: 4px 8px;
     width: 450px;
     justify-content: space-between;
+    cursor: pointer;
 }
 
+
+
 .newsletter .box .subs-btn{
-    border-radius: 15px;
+    border-radius: 0.5rem;
     font-weight: 600;
     padding: 10px 24px;
     font-size: 16px;
